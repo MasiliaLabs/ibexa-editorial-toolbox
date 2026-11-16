@@ -21,7 +21,7 @@ final class AdminMetaBuilderTest extends TestCase
     {
         $urls = $this->createMock(UrlGeneratorInterface::class);
         $urls->expects(self::once())->method('generate')
-            ->with('ibexa.dashboard', ['siteaccess' => 'admin_mattcch'], UrlGeneratorInterface::ABSOLUTE_URL)
+            ->with('ibexa.dashboard', ['siteaccess' => 'admin_partner'], UrlGeneratorInterface::ABSOLUTE_URL)
             ->willReturn('http://admin.example/dashboard');
 
         $meta = $this->builder($urls, new EventDispatcher())->build($this->content());
@@ -70,7 +70,7 @@ final class AdminMetaBuilderTest extends TestCase
         $config->method('getParameter')->willReturnCallback(
             static fn (string $name, ?string $namespace = null): mixed => match ($name) {
                 'languages' => ['fre-FR', 'eng-GB'],
-                'admin_siteaccess' => 'admin_mattcch',
+                'admin_siteaccess' => 'admin_partner',
                 default => null,
             }
         );

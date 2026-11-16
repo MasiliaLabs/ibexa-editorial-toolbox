@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 // Standalone run (`composer install` in the package) or, as fallback, the host project's autoloader
-// (set HOST_AUTOLOAD, defaults to the IMAL DDEV layout).
+// (set HOST_AUTOLOAD, defaults to the DDEV layout).
 $candidates = [
     __DIR__ . '/../vendor/autoload.php',
     getenv('HOST_AUTOLOAD') ?: '/var/www/html/ibexa/vendor/autoload.php',
