@@ -1,8 +1,30 @@
 {
     "name": "masilia/editorial-toolbox",
     "description": "In-context editorial toolbox for Ibexa: front-end edit toolbar, block sidebar and the JSON API behind them",
-    "type": "symfony-bundle",
+    "keywords": [
+        "ibexa",
+        "ibexa-dxp",
+        "ibexa-4.6",
+        "ibexa-5",
+        "symfony-bundle",
+        "in-context-editing",
+        "toolbar",
+        "cms"
+    ],
+    "homepage": "https://github.com/MasiliaLabs/editorial-toolbox",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "MasiliaLabs",
+            "homepage": "https://github.com/MasiliaLabs"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/MasiliaLabs/editorial-toolbox/issues",
+        "source": "https://github.com/MasiliaLabs/editorial-toolbox",
+        "security": "https://github.com/MasiliaLabs/editorial-toolbox/security/policy"
+    },
+    "type": "symfony-bundle",
     "require": {
         "php": "^8.1",
         "ibexa/admin-ui": "^4.6 || ^5.0",
