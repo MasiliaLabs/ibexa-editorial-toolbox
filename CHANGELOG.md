@@ -4,6 +4,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+## [0.3.2] - 2026-11-17
+
 ### Changed
 - Declares the dependencies the code uses directly; examples and test fixtures are neutral.
 
@@ -36,7 +38,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 First release: the in-context edit toolbar and the block sidebar.
 
-[Unreleased]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.1...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.2...HEAD
+[0.3.2]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.1...0.3.2
 [0.3.1]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.0...0.3.1
 [0.3.0]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.2.2...0.3.0
 [0.2.2]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.2.1...0.2.2
