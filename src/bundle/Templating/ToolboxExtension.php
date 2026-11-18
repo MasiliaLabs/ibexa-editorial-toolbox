@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Masilia\Bundle\EditorialToolbox\Templating;
 
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Symfony\Contracts\Translation\TranslatorInterface;
 use Twig\Environment;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
@@ -23,7 +22,6 @@ class ToolboxExtension extends AbstractExtension
 
     public function __construct(
         private readonly UrlGeneratorInterface $urlGenerator,
-        private readonly TranslatorInterface $translator,
     ) {
     }
 

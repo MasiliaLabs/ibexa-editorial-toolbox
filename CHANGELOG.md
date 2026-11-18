@@ -4,6 +4,15 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+## [0.3.3] - 2026-11-18
+
+### Fixed
+- `AdminMetaViewListener` no longer tests a content view's content for `null`, which it never is.
+
+### Changed
+- `ToolboxExtension` no longer takes a translator it never used. Passing one still works (PHP ignores the extra argument).
+- PHPStan (level 5) runs in the continuous integration. `ibexa/automated-translation` is optional: its services are the only ones the analysis is told to ignore.
+
 ## [0.3.2] - 2026-11-17
 
 ### Changed
@@ -38,7 +47,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 First release: the in-context edit toolbar and the block sidebar.
 
-[Unreleased]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.2...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.3...HEAD
+[0.3.3]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.2...0.3.3
 [0.3.2]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.1...0.3.2
 [0.3.1]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.0...0.3.1
 [0.3.0]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.2.2...0.3.0

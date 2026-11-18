@@ -1,0 +1,11 @@
+parameters:
+    level: 5
+    paths:
+        - src
+    reportUnmatchedIgnoredErrors: true
+    ignoreErrors:
+        # ibexa/automated-translation is optional (a commercial Ibexa package, not installed everywhere): the adapter takes its services
+        # as nullable and offers no provider without them.
+        -
+            message: '#Ibexa\\AutomatedTranslation\\(ClientProvider|Translator)#'
+            path: src/lib/Translation/AutomatedTranslationProvider.php

@@ -7,7 +7,6 @@ namespace Masilia\Tests\Bundle\EditorialToolbox;
 use Masilia\Bundle\EditorialToolbox\Templating\ToolboxExtension;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use Symfony\Contracts\Translation\TranslatorInterface;
 use Twig\Environment;
 use Twig\Loader\ArrayLoader;
 
@@ -32,7 +31,7 @@ final class ToolboxExtensionTest extends TestCase
             '@MasiliaEditorialToolbox/toolbox.html.twig' => '{{ config|json_encode|raw }}',
         ]));
 
-        $json = (new ToolboxExtension($urls, $this->createMock(TranslatorInterface::class)))->render($twig);
+        $json = (new ToolboxExtension($urls))->render($twig);
         $config = json_decode($json, true);
 
         self::assertSame([
@@ -81,6 +80,6 @@ final class ToolboxExtensionTest extends TestCase
 
     private function extension(): ToolboxExtension
     {
-        return new ToolboxExtension($this->createMock(UrlGeneratorInterface::class), $this->createMock(TranslatorInterface::class));
+        return new ToolboxExtension($this->createMock(UrlGeneratorInterface::class));
     }
 }

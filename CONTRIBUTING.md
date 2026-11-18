@@ -18,6 +18,7 @@ Before you open a pull request, run what the continuous integration runs:
 
 ```bash
 vendor/bin/phpunit
+vendor/bin/phpstan analyse --memory-limit=2G --no-progress
 ```
 
 ## Pull requests

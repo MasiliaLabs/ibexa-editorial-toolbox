@@ -38,11 +38,6 @@ class AdminMetaViewListener implements EventSubscriberInterface
             return;
         }
 
-        $content = $view->getContent();
-        if ($content === null) {
-            return;
-        }
-
-        $view->addParameters(['admin_meta' => $this->adminMetaBuilder->build($content)]);
+        $view->addParameters(['admin_meta' => $this->adminMetaBuilder->build($view->getContent())]);
     }
 }
