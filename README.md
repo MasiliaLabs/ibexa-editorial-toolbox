@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/MasiliaLabs/editorial-toolbox/actions/workflows/ci.yml/badge.svg)](https://github.com/MasiliaLabs/editorial-toolbox/actions/workflows/ci.yml)
 [![Latest version](https://img.shields.io/packagist/v/masilia/editorial-toolbox.svg)](https://packagist.org/packages/masilia/editorial-toolbox)
+[![Downloads](https://img.shields.io/packagist/dt/masilia/editorial-toolbox.svg)](https://packagist.org/packages/masilia/editorial-toolbox/stats)
 [![PHP](https://img.shields.io/packagist/php-v/masilia/editorial-toolbox.svg)](https://packagist.org/packages/masilia/editorial-toolbox)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
