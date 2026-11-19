@@ -85,6 +85,24 @@ composer require masilia/editorial-toolbox
 
    Mark a template root as editable with `{{ masilia_editorial_attrs() }}`.
 
+### With Symfony Flex
+
+The Masilia recipes do the first steps for you. Add their endpoint once to the `composer.json` of your project, after the one of Ibexa:
+
+```json
+"extra": {
+    "symfony": {
+        "endpoint": [
+            "https://api.github.com/repos/ibexa/recipes/contents/index.json?ref=flex/main",
+            "https://api.github.com/repos/MasiliaLabs/recipes/contents/index.json?ref=flex/main",
+            "flex://defaults"
+        ]
+    }
+}
+```
+
+Then `composer require masilia/editorial-toolbox` enables the bundle and writes `config/routes/masilia_editorial_toolbox.yaml` (prefix `/api`, for an admin matched by URI: use `/admin/api` for an admin matched by host) and `config/packages/masilia_editorial_toolbox.yaml`. What is left is yours: the Encore entry of the front office and `{{ masilia_editorial_toolbox() }}` in your layout. The manual steps above and below stay valid.
+
 ## Usage
 
 Log in to the back office, then browse the public site: the toolbar appears for users who may edit the content. Visitors see nothing.

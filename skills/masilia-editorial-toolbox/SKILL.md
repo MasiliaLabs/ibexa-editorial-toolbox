@@ -22,6 +22,8 @@ With `masilia/ibexa-sites` the admin siteaccess of each site comes from its regi
 5. In the theme layout: `{{ masilia_editorial_toolbox() }}` and load the `admin-toolbar.js` entry (with `masilia/ibexa-blocks`, list it under `assets.extra` of `theme.yaml`). Mark an editable template root with `{{ masilia_editorial_attrs() }}`.
 Build: `yarn encore dev` (in DDEV: `ddev exec yarn encore dev`).
 
+With the Masilia recipes endpoint in the `composer.json` (`https://api.github.com/repos/MasiliaLabs/recipes/contents/index.json?ref=flex/main` in `extra.symfony.endpoint`, after Ibexa's), `composer require` already enables the bundle and writes the route and config files (see the README, section *With Symfony Flex*); then do what is left. Without the endpoint, do everything by hand.
+
 ## Troubleshooting
 - Toolbar missing: user not logged in on the admin siteaccess or lacks edit rights; entry not built or not loaded by the theme; `masilia_editorial_toolbox()` not in the layout; check the browser console and network for `/admin/api` 403/404.
 - `/admin/api/csrf-token` answers 404: wrong route prefix for a URI-matched admin (use `/api`). An anonymous call answers 500 "Anonymous user cannot login to the current siteaccess": Ibexa's check, not a bug of the package.
