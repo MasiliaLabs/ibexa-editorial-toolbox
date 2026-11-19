@@ -8,7 +8,7 @@ Security fixes are released for the latest minor version of `masilia/editorial-t
 
 **Please do not open a public issue for a security problem.**
 
-Report it privately through GitHub: open the [Security tab](https://github.com/MasiliaLabs/editorial-toolbox/security/advisories/new) of this repository and choose *Report a vulnerability*. Include:
+Report it privately through GitHub: open the [Security tab](https://github.com/MasiliaLabs/ibexa-editorial-toolbox/security/advisories/new) of this repository and choose *Report a vulnerability*. Include:
 
 - the version of the package and of Ibexa you use;
 - what an attacker can do and the steps to reproduce it;

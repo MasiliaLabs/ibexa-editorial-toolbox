@@ -4,12 +4,12 @@ Thank you for taking the time to contribute. Bug reports, ideas and pull request
 
 ## Reporting a bug or asking for a feature
 
-Open an [issue](https://github.com/MasiliaLabs/editorial-toolbox/issues/new/choose) and fill the template. For a bug, give the versions of the package, PHP and Ibexa, what you did, what you expected and what happened. Security problems go through the [security policy](SECURITY.md), never through a public issue.
+Open an [issue](https://github.com/MasiliaLabs/ibexa-editorial-toolbox/issues/new/choose) and fill the template. For a bug, give the versions of the package, PHP and Ibexa, what you did, what you expected and what happened. Security problems go through the [security policy](SECURITY.md), never through a public issue.
 
 ## Working on the code
 
 ```bash
-git clone https://github.com/MasiliaLabs/editorial-toolbox.git
+git clone https://github.com/MasiliaLabs/ibexa-editorial-toolbox.git
 cd editorial-toolbox
 composer install
 ```

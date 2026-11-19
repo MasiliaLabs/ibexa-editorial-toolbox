@@ -4,6 +4,11 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+## [0.3.5] - 2026-11-19
+
+### Changed
+- The repository is now `MasiliaLabs/ibexa-editorial-toolbox`: the links of `composer.json` and of the docs follow (the Packagist name stays `masilia/editorial-toolbox`).
+
 ### Fixed
 - Docs: the routes prefix is `/api` (not `/admin/api`) when the admin siteaccess is matched by URI (`/admin`), because Ibexa strips `/admin` before routing; the 500 answered to an anonymous call comes from Ibexa's access check of the admin siteaccess. README, `routing.yaml` and skill corrected.
 
@@ -55,7 +60,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 First release: the in-context edit toolbar and the block sidebar.
 
-[Unreleased]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.4...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.5...HEAD
+[0.3.5]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.4...0.3.5
 [0.3.4]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.3...0.3.4
 [0.3.3]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.2...0.3.3
 [0.3.2]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.1...0.3.2

@@ -11,7 +11,7 @@
         "toolbar",
         "cms"
     ],
-    "homepage": "https://github.com/MasiliaLabs/editorial-toolbox",
+    "homepage": "https://github.com/MasiliaLabs/ibexa-editorial-toolbox",
     "license": "MIT",
     "authors": [
         {
@@ -20,9 +20,9 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/MasiliaLabs/editorial-toolbox/issues",
-        "source": "https://github.com/MasiliaLabs/editorial-toolbox",
-        "security": "https://github.com/MasiliaLabs/editorial-toolbox/security/policy"
+        "issues": "https://github.com/MasiliaLabs/ibexa-editorial-toolbox/issues",
+        "source": "https://github.com/MasiliaLabs/ibexa-editorial-toolbox",
+        "security": "https://github.com/MasiliaLabs/ibexa-editorial-toolbox/security/policy"
     },
     "type": "symfony-bundle",
     "require": {

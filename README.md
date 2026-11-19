@@ -1,6 +1,6 @@
 # Editorial Toolbox
 
-[![CI](https://github.com/MasiliaLabs/editorial-toolbox/actions/workflows/ci.yml/badge.svg)](https://github.com/MasiliaLabs/editorial-toolbox/actions/workflows/ci.yml)
+[![CI](https://github.com/MasiliaLabs/ibexa-editorial-toolbox/actions/workflows/ci.yml/badge.svg)](https://github.com/MasiliaLabs/ibexa-editorial-toolbox/actions/workflows/ci.yml)
 [![Latest version](https://img.shields.io/packagist/v/masilia/editorial-toolbox.svg)](https://packagist.org/packages/masilia/editorial-toolbox)
 [![Downloads](https://img.shields.io/packagist/dt/masilia/editorial-toolbox.svg)](https://packagist.org/packages/masilia/editorial-toolbox/stats)
 [![PHP](https://img.shields.io/packagist/php-v/masilia/editorial-toolbox.svg)](https://packagist.org/packages/masilia/editorial-toolbox)
@@ -120,7 +120,7 @@ Restart the agent (or reload its skills) to pick it up. Update the copy after `c
 | [`masilia/ibexa-ai-craft`](https://github.com/MasiliaLabs/ibexa-ai-craft) | The assistant builds sites and pages out of blocks |
 | [`masilia/ibexa-ai-editor`](https://github.com/MasiliaLabs/ibexa-ai-editor) | AI suggestions and image generation in the content editing form |
 | [`masilia/ibexa-blocks`](https://github.com/MasiliaLabs/ibexa-blocks) | Front-office rendering of pages made of blocks, with themes |
-| [`masilia/editorial-toolbox`](https://github.com/MasiliaLabs/editorial-toolbox) | In-context editing toolbar for the front office |
+| [`masilia/editorial-toolbox`](https://github.com/MasiliaLabs/ibexa-editorial-toolbox) | In-context editing toolbar for the front office |
 
 **What requires what** (Composer installs it for you):
 
@@ -139,13 +139,13 @@ Restart the agent (or reload its skills) to pick it up. Update the copy after `c
 ## Download
 
 - **Composer** (recommended): `composer require masilia/editorial-toolbox` — [editorial-toolbox on Packagist](https://packagist.org/packages/masilia/editorial-toolbox)
-- **Archive** of a release: [GitHub releases](https://github.com/MasiliaLabs/editorial-toolbox/releases) (each release lists what changed)
-- **Source**: `git clone https://github.com/MasiliaLabs/editorial-toolbox.git`
+- **Archive** of a release: [GitHub releases](https://github.com/MasiliaLabs/ibexa-editorial-toolbox/releases) (each release lists what changed)
+- **Source**: `git clone https://github.com/MasiliaLabs/ibexa-editorial-toolbox.git`
 - What changed between versions: [CHANGELOG.md](CHANGELOG.md)
 
 ## Support, contributing and security
 
-- Questions and bug reports: [GitHub issues](https://github.com/MasiliaLabs/editorial-toolbox/issues)
+- Questions and bug reports: [GitHub issues](https://github.com/MasiliaLabs/ibexa-editorial-toolbox/issues)
 - Pull requests are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md)
 - Security problems: please follow [SECURITY.md](SECURITY.md) and do not open a public issue
 
