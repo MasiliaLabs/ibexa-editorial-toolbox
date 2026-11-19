@@ -4,6 +4,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+## [0.3.6] - 2026-11-19
+
 ### Added
 - Docs: a *With Symfony Flex* section in the README and in the skill: the Masilia recipes (`MasiliaLabs/recipes`) enable the bundle and write its route and config files on `composer require`.
 
@@ -63,7 +65,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 First release: the in-context edit toolbar and the block sidebar.
 
-[Unreleased]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.5...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.6...HEAD
+[0.3.6]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.5...0.3.6
 [0.3.5]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.4...0.3.5
 [0.3.4]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.3...0.3.4
 [0.3.3]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.2...0.3.3
