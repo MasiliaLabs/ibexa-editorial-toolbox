@@ -4,6 +4,11 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+## [0.3.4] - 2026-11-19
+
+### Added
+- An agent skill, `skills/masilia-editorial-toolbox`, for AI coding agents that work with the package; the README says how to install it.
+
 ## [0.3.3] - 2026-11-18
 
 ### Fixed
@@ -47,7 +52,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 First release: the in-context edit toolbar and the block sidebar.
 
-[Unreleased]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.3...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.4...HEAD
+[0.3.4]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.3...0.3.4
 [0.3.3]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.2...0.3.3
 [0.3.2]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.1...0.3.2
 [0.3.1]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.0...0.3.1
