@@ -9,7 +9,7 @@ A floating **edit toolbar** and a **block sidebar** for logged-in editors on the
 
 ## Install
 1. `composer require masilia/editorial-toolbox`; enable `Masilia\Bundle\EditorialToolbox\MasiliaEditorialToolboxBundle`.
-2. Routes: import `@MasiliaEditorialToolboxBundle/Resources/config/routing.yaml` with `prefix: /admin/api`.
+2. Routes: import `@MasiliaEditorialToolboxBundle/Resources/config/routing.yaml` with `prefix: /admin/api` when the admin siteaccess is matched by host, or `prefix: /api` when it is matched by URI (`/admin`: Ibexa strips it before routing; the browser still calls `/admin/api/...`).
 3. Config:
 ```yaml
 masilia_editorial_toolbox:
@@ -24,6 +24,7 @@ Build: `yarn encore dev` (in DDEV: `ddev exec yarn encore dev`).
 
 ## Troubleshooting
 - Toolbar missing: user not logged in on the admin siteaccess or lacks edit rights; entry not built or not loaded by the theme; `masilia_editorial_toolbox()` not in the layout; check the browser console and network for `/admin/api` 403/404.
+- `/admin/api/csrf-token` answers 404: wrong route prefix for a URI-matched admin (use `/api`). An anonymous call answers 500 "Anonymous user cannot login to the current siteaccess": Ibexa's check, not a bug of the package.
 - Edit link points to the wrong back office: `admin_siteaccess` of the site (registry or `system.<group>`).
 - Sidebar cannot add blocks: `blocks_field` is wrong for the page type, or the field restricts the block type.
 - Editing a content without a translation in the site language asks what to do instead of creating a blank one: expected.

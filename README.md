@@ -52,6 +52,8 @@ composer require masilia/editorial-toolbox
        prefix: /admin/api
    ```
 
+   `/admin/api` is right when the admin siteaccess is matched by **host**. When it is matched by **URI** (`/admin`), Ibexa strips `/admin` before routing: use `prefix: /api`, the browser still calls `/admin/api/...`. Without it `GET /admin/api/csrf-token` answers 404 "No route found". An anonymous request to that endpoint answers 500 "Anonymous user cannot login to the current siteaccess": that is Ibexa's access check on the admin siteaccess, before this package's controller.
+
 3. Configure it (`config/packages/masilia_editorial_toolbox.yaml`):
 
    ```yaml

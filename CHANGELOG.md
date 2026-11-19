@@ -4,6 +4,9 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+### Fixed
+- Docs: the routes prefix is `/api` (not `/admin/api`) when the admin siteaccess is matched by URI (`/admin`), because Ibexa strips `/admin` before routing; the 500 answered to an anonymous call comes from Ibexa's access check of the admin siteaccess. README, `routing.yaml` and skill corrected.
+
 ## [0.3.4] - 2026-11-19
 
 ### Added

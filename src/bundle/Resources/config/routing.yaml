@@ -1,7 +1,8 @@
 # Import with the prefix of your choice, e.g.
 #   masilia_editorial_toolbox:
 #       resource: '@MasiliaEditorialToolboxBundle/Resources/config/routing.yaml'
-#       prefix: /admin/api
+#       prefix: /admin/api     # admin siteaccess matched by host
+#       prefix: /api           # admin siteaccess matched by URI (/admin): Ibexa strips /admin before routing
 masilia_editorial_toolbox.csrf:
     path: /csrf-token
     controller: Masilia\Bundle\EditorialToolbox\Controller\CsrfTokenController::token
