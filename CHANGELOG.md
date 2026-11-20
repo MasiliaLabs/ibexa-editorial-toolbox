@@ -4,6 +4,9 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+### Added
+- Docs: a *Stay informed* section in the README: how to be told of new releases (GitHub Watch, the releases feed, `composer outdated`, Dependabot) and where to read what changes.
+
 ## [0.4.0] - 2026-11-20
 
 ### Changed
