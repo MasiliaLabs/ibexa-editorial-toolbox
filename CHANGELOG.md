@@ -4,6 +4,9 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+### Changed
+- A new block of a page is made in a folder under that page, named after it (`<page name> Blocks`, settings `blocks_folder_suffix` default `Blocks` and `folder_type` default `folder`), found by the remote id `<page remote id>_blocks` and made when missing; when that is not possible (the page is not a container, the editor may not create a folder) the block goes under the page as before. An empty `blocks_folder_suffix` keeps the old behaviour. Blocks that exist elsewhere are not moved.
+
 ## [0.3.6] - 2026-11-19
 
 ### Added

@@ -62,6 +62,8 @@ composer require masilia/editorial-toolbox
            default:
                blocks_field: blocks       # the relation list that holds the ordered blocks of a page
                admin_siteaccess: admin    # the siteaccess of the back office
+               blocks_folder_suffix: Blocks   # new blocks of a page are made in the folder "<page name> Blocks" under it; empty = under the page
+               folder_type: folder        # the content type of that folder
            my_site_group:
                admin_siteaccess: admin_my_site
    ```
@@ -102,6 +104,8 @@ The Masilia recipes do the first steps for you. Add their endpoint once to the `
 ```
 
 Then `composer require masilia/editorial-toolbox` enables the bundle and writes `config/routes/masilia_editorial_toolbox.yaml` (prefix `/api`, for an admin matched by URI: use `/admin/api` for an admin matched by host) and `config/packages/masilia_editorial_toolbox.yaml`. What is left is yours: the Encore entry of the front office and `{{ masilia_editorial_toolbox() }}` in your layout. The manual steps above and below stay valid.
+
+**Where new blocks are made**: in a folder under the page, named after it (`About Blocks`), found by the remote id of the page and `_blocks` and made when it is missing (the editor needs the right to create it; otherwise, or when the page is not a container, the block goes under the page as before). Set `blocks_folder_suffix` to an empty value to keep the old behaviour. Blocks that exist elsewhere stay where they are.
 
 ## Usage
 

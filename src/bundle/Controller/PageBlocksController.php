@@ -9,6 +9,7 @@ use Ibexa\Contracts\Core\Repository\LanguageService;
 use Ibexa\Contracts\Core\Repository\PermissionResolver;
 use Ibexa\Contracts\Core\SiteAccess\ConfigResolverInterface;
 use Masilia\Contracts\EditorialToolbox\Block\PageBlocksServiceInterface;
+use Masilia\EditorialToolbox\Block\BlocksFolderService;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,6 +24,7 @@ class PageBlocksController
         private readonly LanguageService $languageService,
         private readonly ConfigResolverInterface $configResolver,
         private readonly UrlGeneratorInterface $urlGenerator,
+        private readonly BlocksFolderService $blocksFolders,
     ) {
     }
 
@@ -54,8 +56,16 @@ class PageBlocksController
         $contentType = $this->contentTypeService->loadContentTypeByIdentifier($contentTypeIdentifier);
         $languageCode = $this->configResolver->getParameter('languages')[0] ?? $this->languageService->getDefaultLanguageCode();
 
+        // The blocks of a page are made in the folder of its blocks, under the page (the page itself when it cannot have one).
+        $targetLocationId = $this->blocksFolders->targetFor(
+            $locationId,
+            $languageCode,
+            (string) $this->configResolver->getParameter('blocks_folder_suffix', 'masilia_editorial_toolbox'),
+            (string) $this->configResolver->getParameter('folder_type', 'masilia_editorial_toolbox'),
+        );
+
         $editUrl = $this->urlGenerator->generate('ibexa.content.on_the_fly.create', [
-            'locationId' => $locationId,
+            'locationId' => $targetLocationId,
             'languageCode' => $languageCode,
             'contentTypeIdentifier' => $contentTypeIdentifier,
             'siteaccess' => $this->configResolver->getParameter('admin_siteaccess', 'masilia_editorial_toolbox'),

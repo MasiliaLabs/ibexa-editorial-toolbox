@@ -30,6 +30,8 @@ class MasiliaEditorialToolboxExtension extends Extension
 
         $processor = new ConfigurationProcessor($container, self::ALIAS);
         $processor->mapSetting('blocks_field', $config);
+        $processor->mapSetting('blocks_folder_suffix', $config);
+        $processor->mapSetting('folder_type', $config);
         $processor->mapSetting('admin_siteaccess', $config);
     }
 }

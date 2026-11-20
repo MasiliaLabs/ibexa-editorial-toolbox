@@ -28,6 +28,7 @@ With the Masilia recipes endpoint in the `composer.json` (`https://api.github.co
 - Toolbar missing: user not logged in on the admin siteaccess or lacks edit rights; entry not built or not loaded by the theme; `masilia_editorial_toolbox()` not in the layout; check the browser console and network for `/admin/api` 403/404.
 - `/admin/api/csrf-token` answers 404: wrong route prefix for a URI-matched admin (use `/api`). An anonymous call answers 500 "Anonymous user cannot login to the current siteaccess": Ibexa's check, not a bug of the package.
 - Edit link points to the wrong back office: `admin_siteaccess` of the site (registry or `system.<group>`).
+- New blocks go in the folder `<page name> Blocks` under the page (remote id `<page remote id>_blocks`, made when missing; settings `blocks_folder_suffix` and `folder_type`; empty suffix = under the page as before). If the folder cannot be made (page not a container, no right to create) the block goes under the page.
 - Sidebar cannot add blocks: `blocks_field` is wrong for the page type, or the field restricts the block type.
 - Editing a content without a translation in the site language asks what to do instead of creating a blank one: expected.
 - Changes in the package: PHPUnit from the package directory; release with `masilia-package-release`.
