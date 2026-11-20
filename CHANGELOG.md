@@ -4,6 +4,9 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+### Fixed
+- After Publish in the in-context editor the modal no longer stays open on a blank page: when editing, Ibexa ignores the response set by the form event and returns its own success view, so the toolbox now swaps the template of that view (the page that tells the toolbar the work is done, which reloads the page).
+
 ## [0.4.2] - 2026-11-20
 
 ### Fixed
