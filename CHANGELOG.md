@@ -4,6 +4,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+## [0.4.2] - 2026-11-20
+
 ### Fixed
 - Publishing in the in-context editor no longer ends with an HTTP 500 (`AdminMetaBuilder::build(): Argument #1 ($content) must be of type Content, null given`): the view that the editor renders after the publish has no content, and the listener that adds `admin_meta` now leaves such a view alone. The content was published all along; the modal now closes.
 - Docs: the palette lists block types only when the `blocks` field of the page restricts the content types it accepts (`selectionContentTypes`); on an unrestricted field it shows "No block types available". After restoring a database, clear every cache pool (`cache:pool:clear --all`).
@@ -79,7 +81,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 First release: the in-context edit toolbar and the block sidebar.
 
-[Unreleased]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.4.1...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.4.2...HEAD
+[0.4.2]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.4.0...0.4.1
 [0.4.0]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.6...0.4.0
 [0.3.6]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.5...0.3.6
