@@ -4,6 +4,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+## [0.4.1] - 2026-11-20
+
 ### Added
 - Docs: a *Stay informed* section in the README: how to be told of new releases (GitHub Watch, the releases feed, `composer outdated`, Dependabot) and where to read what changes.
 
@@ -73,7 +75,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 First release: the in-context edit toolbar and the block sidebar.
 
-[Unreleased]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.4.0...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.4.1...HEAD
+[0.4.1]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.4.0...0.4.1
 [0.4.0]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.6...0.4.0
 [0.3.6]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.5...0.3.6
 [0.3.5]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.4...0.3.5
