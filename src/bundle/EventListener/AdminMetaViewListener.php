@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Masilia\Bundle\EditorialToolbox\EventListener;
 
 use Ibexa\Contracts\Core\Repository\PermissionResolver;
+use Ibexa\Contracts\Core\Repository\Values\Content\Content;
 use Ibexa\Core\MVC\Symfony\Event\PreContentViewEvent;
 use Ibexa\Core\MVC\Symfony\MVCEvents;
 use Ibexa\Core\MVC\Symfony\View\ContentView;
@@ -38,6 +39,12 @@ class AdminMetaViewListener implements EventSubscriberInterface
             return;
         }
 
-        $view->addParameters(['admin_meta' => $this->adminMetaBuilder->build($view->getContent())]);
+        // The view the in-context editor renders after a publish has no content: nothing to describe, and nothing to fail on.
+        $content = $view->getContent();
+        if (!$content instanceof Content) {
+            return;
+        }
+
+        $view->addParameters(['admin_meta' => $this->adminMetaBuilder->build($content)]);
     }
 }

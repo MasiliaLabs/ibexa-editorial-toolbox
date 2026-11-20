@@ -4,6 +4,11 @@ parameters:
         - src
     reportUnmatchedIgnoredErrors: true
     ignoreErrors:
+        # ContentView::getContent() is documented to return a Content, but its property is untyped: the view that the in-context editor renders
+        # after a publish has none, and the call returns null (a test covers it).
+        -
+            message: '#Instanceof between .*Content and .*Content will always evaluate to true#'
+            path: src/bundle/EventListener/AdminMetaViewListener.php
         # ibexa/automated-translation is optional (a commercial Ibexa package, not installed everywhere): the adapter takes its services
         # as nullable and offers no provider without them.
         -

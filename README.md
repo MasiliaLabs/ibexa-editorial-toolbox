@@ -105,6 +105,8 @@ The Masilia recipes do the first steps for you. Add their endpoint once to the `
 
 Then `composer require masilia/editorial-toolbox` enables the bundle and writes `config/routes/masilia_editorial_toolbox.yaml` (prefix `/api`, for an admin matched by URI: use `/admin/api` for an admin matched by host) and `config/packages/masilia_editorial_toolbox.yaml`. What is left is yours: the Encore entry of the front office and `{{ masilia_editorial_toolbox() }}` in your layout. The manual steps above and below stay valid.
 
+**The palette of block types**: the sidebar lists the types that the `blocks` field of the page accepts (`selectionContentTypes` of the field definition). On a field that accepts every type it lists none ("No block types available"): restrict it to your block types. With [`masilia/ibexa-blocks`](https://github.com/MasiliaLabs/ibexa-blocks), declare `allowed_on: [page, home_page]` in the definition of each block and run `masilia:blocks:model:install` / `model:sync-blocks` (they add a block to a field that already restricts its types).
+
 **Where new blocks are made**: in a folder under the page, named after it (`About Blocks`), found by the remote id of the page and `_blocks` and made when it is missing (the editor needs the right to create it; otherwise, or when the page is not a container, the block goes under the page as before). Set `blocks_folder_suffix` to an empty value to keep the old behaviour. Blocks that exist elsewhere stay where they are.
 
 ## Usage
