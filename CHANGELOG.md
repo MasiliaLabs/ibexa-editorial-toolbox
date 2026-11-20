@@ -4,6 +4,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-11-20
+
 ### Changed
 - A new block of a page is made in a folder under that page, named after it (`<page name> Blocks`, settings `blocks_folder_suffix` default `Blocks` and `folder_type` default `folder`), found by the remote id `<page remote id>_blocks` and made when missing; when that is not possible (the page is not a container, the editor may not create a folder) the block goes under the page as before. An empty `blocks_folder_suffix` keeps the old behaviour. Blocks that exist elsewhere are not moved.
 
@@ -68,7 +70,8 @@ All notable changes to `masilia/editorial-toolbox` are documented here. The form
 
 First release: the in-context edit toolbar and the block sidebar.
 
-[Unreleased]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.6...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.4.0...HEAD
+[0.4.0]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.6...0.4.0
 [0.3.6]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.5...0.3.6
 [0.3.5]: https://github.com/MasiliaLabs/ibexa-editorial-toolbox/compare/0.3.4...0.3.5
 [0.3.4]: https://github.com/MasiliaLabs/editorial-toolbox/compare/0.3.3...0.3.4
